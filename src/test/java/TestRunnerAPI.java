@@ -1,11 +1,14 @@
 
 import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
- 
-@RunWith(Cucumber.class)
+import net.serenitybdd.cucumber.CucumberWithSerenity;
+
+@RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-				features= "src/Feature/Sample.feature"
+		format = {"pretty"},
+				features= "Resource/SampleTest.feature",
+				glue = {"api.stepdefinations"},
+				monochrome=true
 				)
 /*
 
