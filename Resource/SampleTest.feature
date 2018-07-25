@@ -1,11 +1,11 @@
-Feature: Login Action
+Feature: Google search 
  
-Scenario Outline: Filter by different item types
-    Given I have searched for items containing '<material>'
-    When I filter results by type '<type>'
-    Then I should only see items containing '<material>' of type '<type>'
-  Examples:
-    | material | type           |
-    | silk     | Handmade       |
-    | bronze   | Vintage        |
-    | wool     | Craft Supplies |
+Scenario: Google search 
+	Given I want to search in Google 
+	When I search for 'Serenity BDD' 
+	Then I should see link to 'Serenity BDD - Automated Acceptance Testing with Style'
+		
+Scenario: Google search multiple 
+	Given I want to search in Google 
+	When I search for '<search_request>' 
+	Then I should see link to '<search_result>'

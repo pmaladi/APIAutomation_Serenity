@@ -1,8 +1,8 @@
-apply plugin: 'java-library'
+apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'net.serenity-bdd.aggregator'
-apply plugin: 'maven'
+//apply plugin: 'maven'
 
 
 repositories {
@@ -18,7 +18,7 @@ buildscript {
         
     }
     dependencies {
-        classpath("net.serenity-bdd:serenity-gradle-plugin:1.9.31")
+        classpath("net.serenity-bdd:serenity-gradle-plugin:1.2.4")
     }
 }
 
@@ -26,27 +26,24 @@ dependencies {
     
     testCompile 'junit:junit:4.12'
     compile 'org.slf4j:slf4j-simple:1.7.25'
-    compile 'org.slf4j:slf4j-api:1.7.25'
-    compile 'net.serenity-bdd:serenity-core:1.9.30'
-    compile 'net.serenity-bdd:serenity-junit:1.9.30'
-    compile 'net.serenity-bdd:serenity-cucumber:1.9.12'
-    compile 'net.serenity-bdd:serenity-rest-assured:1.9.30'
-    compile 'com.fasterxml.jackson.core:jackson-core:2.9.5'
-    compile 'com.fasterxml.jackson.core:jackson-databind:2.9.5'
-    compile 'com.fasterxml.jackson.core:jackson-annotations:2.9.5'
-    compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.9.5'
+    //compile 'org.slf4j:slf4j-api:1.7.25'
+    compile 'net.serenity-bdd:serenity-core:1.2.4'
+    compile 'net.serenity-bdd:serenity-junit:1.2.4'
+    compile 'net.serenity-bdd:serenity-cucumber:1.1.24'
+    //compile 'net.serenity-bdd:serenity-rest-assured:1.9.30'
+    //compile 'com.fasterxml.jackson.core:jackson-core:2.9.5'
+    //compile 'com.fasterxml.jackson.core:jackson-databind:2.9.5'
+    //compile 'com.fasterxml.jackson.core:jackson-annotations:2.9.5'
+    //compile 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.9.5'
     
     compile 'org.assertj:assertj-core:1.7.0'
-    compile 'info.cukes:cucumber-core:1.2.5'
-    compile 'info.cukes:cucumber-java:1.2.5'
-    compile 'info.cukes:cucumber-junit:1.2.5'
-    compile 'info.cukes:gherkin:2.12.2'
-    compile 'info.cukes:cucumber-jvm-deps:1.0.5'
+    //compile 'info.cukes:cucumber-core:1.2.5'
+    //compile 'info.cukes:cucumber-java:1.2.5'
+    //compile 'info.cukes:cucumber-junit:1.2.5'
+    //compile 'info.cukes:gherkin:2.12.2'
+    //compile 'info.cukes:cucumber-jvm-deps:1.0.5'
     
-    compile 'org.apache.pdfbox:pdfbox:2.0.11'
-    
-//complie fileTree(dir: 'libs', include: '*.jar')
-  //  complie fileTree(dir: 'testData', include: '*.exe')
+    //compile 'org.apache.pdfbox:pdfbox:2.0.11'
     
 }
 
